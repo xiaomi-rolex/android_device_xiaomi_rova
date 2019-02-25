@@ -1896,3 +1896,7 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so|bed4
 # Display calibration - from riva - V9.2.4.0.NCKMIEK
 vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3b.xml|1483bbcd78dfaa723c0c15caad7f1cbce41fdf1d
 vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3b.xml|814bc2ee08678f07a2065a4e911964c1fd5a298a
+
+# VNDK - from latest system
+lib/libbinder.so:vendor/lib/vndk/libbinder.so
+lib/libcutils.so:vendor/lib/vndk-sp/libcutils.so
