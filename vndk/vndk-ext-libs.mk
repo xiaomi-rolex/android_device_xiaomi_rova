@@ -1,9 +1,6 @@
 EXTRA_VENDOR_LIBRARIES := \
     libpowermanager
 
-# ulysse
+# riva
 EXTRA_VENDOR_LIBRARIES += \
-    libcutils \
-    libgui \
-    libprocessgroup \
     libstdc++
