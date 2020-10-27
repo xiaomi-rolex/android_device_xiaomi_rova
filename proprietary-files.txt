@@ -1889,9 +1889,13 @@ vendor/lib64/libmmcamera2_is.so|1967ee25c89987bf1ec222e407d45b04e809cd00
 vendor/lib64/libmmcamera2_q3a_core.so|fe6d922aba828c1815a1570a694ca86d2cbc1936
 vendor/lib64/libmmcamera2_stats_algorithm.so|6c56815f2c89ea4fbb1463022acdcfd0b1936dc9
 
-# Consumer IR - from riva (oreo)
-vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so|b2e014de968f65e013b4dae3fad67f16aa3b0a09
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so|bed46204c8200d5f0ec1b37c14ecbc06f424db93
+# Consumer IR - LED - from rolex 7.1.2 N2G47H V10.2.3.0.NCCMIXM
+vendor/lib/hw/led/consumerir.default.so|53830d64d63d6cc405209d8d4cafea102dcd7b54
+vendor/lib64/hw/led/consumerir.default.so|d5145eb1712c8e0895016282f3e348c98ad17f7b
+
+# Consumer IR - spidev - from riva (oreo)
+vendor/lib/hw/spidev/consumerir.default.so|b2e014de968f65e013b4dae3fad67f16aa3b0a09
+vendor/lib64/hw/spidev/consumerir.default.so|bed46204c8200d5f0ec1b37c14ecbc06f424db93
 
 # Display calibration - from riva - V9.2.4.0.NCKMIEK
 vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3b.xml|1483bbcd78dfaa723c0c15caad7f1cbce41fdf1d

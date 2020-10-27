@@ -4,3 +4,6 @@
 # Ir
 /dev/spidev6.1                                  u:object_r:spidev_device:s0
 /dev/spidev7.1                                  u:object_r:spidev_device:s0
+
+# Shell Script
+/(vendor|system/vendor)/bin/init\.ir\.sh        u:object_r:init_ir_exec:s0

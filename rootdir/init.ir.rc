@@ -1,0 +1,14 @@
+service vendor.ir_script /vendor/bin/init.ir.sh
+    class main
+    user root
+    oneshot
+
+on property:ro.ir=led
+    mount none /vendor/lib/hw/led/consumerir.default.so /vendor/lib/hw/consumerir.default.so bind
+    mount none /vendor/lib64/hw/led/consumerir.default.so /vendor/lib64/hw/consumerir.default.so bind
+    restart vendor.ir-hal-1-0
+
+on property:ro.ir=spidev
+    mount none /vendor/lib/hw/spidev/consumerir.default.so /vendor/lib/hw/consumerir.default.so bind
+    mount none /vendor/lib64/hw/spidev/consumerir.default.so /vendor/lib64/hw/consumerir.default.so bind
+    restart vendor.ir-hal-1-0
