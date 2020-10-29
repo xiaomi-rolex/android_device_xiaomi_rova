@@ -1,0 +1,20 @@
+service vendor.audio_script /vendor/bin/init.audio.sh
+    class main
+    user root
+    oneshot
+
+on property:ro.audio.spk-ext-pa=0
+    mount none /vendor/etc/rolex/audio_platform_info.xml /vendor/etc/audio_platform_info.xml bind
+    mount none /vendor/etc/rolex/mixer_paths_mtp.xml /vendor/etc/mixer_paths_mtp.xml bind
+    mount none /vendor/etc/rolex/mixer_paths_qrd_sku1.xml /vendor/etc/mixer_paths_qrd_sku1.xml bind
+    mount none /vendor/etc/rolex/mixer_paths_qrd_sku2.xml /vendor/etc/mixer_paths_qrd_sku2.xml bind
+    mount none /vendor/etc/rolex/mixer_paths.xml /vendor/etc/mixer_paths.xml bind
+    restart vendor.audio-hal-2-0
+
+on property:ro.audio.spk-ext-pa=1
+    mount none /vendor/etc/riva/audio_platform_info.xml /vendor/etc/audio_platform_info.xml bind
+    mount none /vendor/etc/riva/mixer_paths_mtp.xml /vendor/etc/mixer_paths_mtp.xml bind
+    mount none /vendor/etc/riva/mixer_paths_qrd_sku1.xml /vendor/etc/mixer_paths_qrd_sku1.xml bind
+    mount none /vendor/etc/riva/mixer_paths_qrd_sku2.xml /vendor/etc/mixer_paths_qrd_sku2.xml bind
+    mount none /vendor/etc/riva/mixer_paths.xml /vendor/etc/mixer_paths.xml bind
+    restart vendor.audio-hal-2-0

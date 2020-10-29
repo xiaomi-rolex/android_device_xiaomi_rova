@@ -1,0 +1,2 @@
+# FDT
+type fdt_spk_ext_pa, fs_type, sysfs_type, proc_type;

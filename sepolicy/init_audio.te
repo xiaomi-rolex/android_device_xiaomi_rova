@@ -1,0 +1,15 @@
+type init_audio, domain;
+type init_audio_exec, exec_type, vendor_file_type, file_type;
+
+# Allow for transition from init domain to init_audio
+init_daemon_domain(init_audio)
+
+# Shell script needs to execute /vendor/bin/sh
+allow init_audio vendor_shell_exec:file rx_file_perms;
+allow init_audio vendor_toolbox_exec:file rx_file_perms;
+
+# Allow to read FDT 
+allow init_audio fdt_spk_ext_pa:file r_file_perms;
+
+# Allow to set ir prop
+set_prop(init_audio, spk_ext_pa_prop)

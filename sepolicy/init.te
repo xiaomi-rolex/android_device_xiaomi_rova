@@ -1,1 +1,2 @@
 get_prop(init, ir_prop)
+get_prop(init, spk_ext_pa_prop)

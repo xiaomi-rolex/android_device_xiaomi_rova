@@ -6,4 +6,5 @@
 /dev/spidev7.1                                  u:object_r:spidev_device:s0
 
 # Shell Script
+/(vendor|system/vendor)/bin/init\.audio\.sh     u:object_r:init_audio_exec:s0
 /(vendor|system/vendor)/bin/init\.ir\.sh        u:object_r:init_ir_exec:s0
