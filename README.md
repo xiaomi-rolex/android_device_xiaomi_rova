@@ -1,4 +1,4 @@
 Copyright (C) 2020 - The LineageOS Project
 
-Android device tree for Xiaomi Redmi 5A
+Unified device tree for Xiaomi Redmi 4A / 5A
 ==============

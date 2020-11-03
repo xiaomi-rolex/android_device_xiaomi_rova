@@ -18,7 +18,7 @@ TARGET_KERNEL_VERSION := 4.9
 # Inherit from common msm8937-common
 -include device/xiaomi/msm8937-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/riva
+DEVICE_PATH := device/xiaomi/rova
 
 # HIDL
 ifeq ($(TARGET_KERNEL_VERSION),3.18)
@@ -28,8 +28,8 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest-l3.xml
 endif
 
 # Kernel
-TARGET_KERNEL_CONFIG := riva_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/riva-$(TARGET_KERNEL_VERSION)
+TARGET_KERNEL_CONFIG := rova_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/rova-$(TARGET_KERNEL_VERSION)
 
 # Partitions
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -53,4 +53,4 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/riva/BoardConfigVendor.mk
+-include vendor/xiaomi/rova/BoardConfigVendor.mk

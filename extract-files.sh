@@ -14,7 +14,7 @@ fi
 set -e
 
 # Required!
-export DEVICE=riva
+export DEVICE=rova
 export DEVICE_COMMON=msm8937-common
 export VENDOR=xiaomi
 

@@ -19,17 +19,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from mido device
-$(call inherit-product, device/xiaomi/riva/device.mk)
+$(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := riva
-PRODUCT_NAME := lineage_riva
+PRODUCT_DEVICE := rova
+PRODUCT_NAME := lineage_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 5A
+PRODUCT_MODEL := Redmi 4A / 5A
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
