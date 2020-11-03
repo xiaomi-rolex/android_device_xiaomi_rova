@@ -27,6 +27,9 @@ else ifeq ($(TARGET_KERNEL_VERSION),4.9)
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest-l3.xml
 endif
 
+# Asserts
+TARGET_OTA_ASSERT_DEVICE := rolex,riva,rova
+
 # Kernel
 TARGET_KERNEL_CONFIG := rova_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/rova-$(TARGET_KERNEL_VERSION)
