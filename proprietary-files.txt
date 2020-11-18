@@ -1932,3 +1932,7 @@ vendor/lib64/hw/spidev/consumerir.default.so|bed46204c8200d5f0ec1b37c14ecbc06f42
 # Display calibration - from riva - V9.2.4.0.NCKMIEK
 vendor/etc/qdcm_calib_data_hx8394F_HD720p_video_BOE_c3b.xml|1483bbcd78dfaa723c0c15caad7f1cbce41fdf1d
 vendor/etc/qdcm_calib_data_ili9881c_HD720p_video_Ebbg_c3b.xml|814bc2ee08678f07a2065a4e911964c1fd5a298a
+
+# RGB Lights HAL - from CAF - latest
+vendor/lib/hw/led/lights.msm8937.so|2545a5d6807cdacffff16ff501c55aa6a4ed9762
+vendor/lib64/hw/led/lights.msm8937.so|8070221253d4d7e64581e9fe87949722a70a92d7
