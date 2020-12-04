@@ -26,8 +26,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/lineage-sdk \
     $(LOCAL_PATH)/overlay/packages/apps/Snap
 
-# Inherit from msm8937-common
-$(call inherit-product, device/xiaomi/msm8937-common/msm8937.mk)
+# Inherit from msm8917-common
+$(call inherit-product, device/xiaomi/msm8917-common/msm8917.mk)
 
 # Audio configuration
 PRODUCT_COPY_FILES += \

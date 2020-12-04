@@ -15,8 +15,8 @@
 
 TARGET_KERNEL_VERSION := 4.9
 
-# Inherit from common msm8937-common
--include device/xiaomi/msm8937-common/BoardConfigCommon.mk
+# Inherit from common msm8917-common
+-include device/xiaomi/msm8917-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/rova
 

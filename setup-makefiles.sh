@@ -20,7 +20,7 @@ set -e
 
 # Required!
 export DEVICE=rova
-export DEVICE_COMMON=msm8937-common
+export DEVICE_COMMON=msm8917-common
 export VENDOR=xiaomi
 
 export DEVICE_BRINGUP_YEAR=2017
