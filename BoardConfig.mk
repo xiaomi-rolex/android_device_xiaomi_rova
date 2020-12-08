@@ -32,7 +32,7 @@ TARGET_OTA_ASSERT_DEVICE := rolex,riva,rova
 
 # Kernel
 TARGET_KERNEL_CONFIG := rova_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/rova-$(TARGET_KERNEL_VERSION)
+TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8917
 
 # Partitions
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
