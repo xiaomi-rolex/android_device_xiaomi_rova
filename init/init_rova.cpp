@@ -72,6 +72,9 @@ void init_target_properties()
     } else {
         property_override("ro.product.model", "Redmi 5A");
     }
+    // Set Maintainer Name for Wave-OS
+    property_override("ro.wave.maintainer", "Thago(Lohit)");
+
 }
 
 void vendor_load_properties()
