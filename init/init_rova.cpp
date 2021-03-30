@@ -75,9 +75,6 @@ void init_target_properties()
         property_override("ro.product.model", "Redmi 5A");
         property_override("ro.vendor.build.fingerprint", "Xiaomi/riva/riva:7.1.2/N2G47H/V9.5.6.0.NCKMIFA:user/release-keys");
     }
-    // Set Maintainer Name for Wave-OS
-    property_override("ro.wave.maintainer", "Thago(Lohit)");
-
 }
 
 void vendor_load_properties()
